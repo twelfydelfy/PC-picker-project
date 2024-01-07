@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PC Picker Project</title>
+    <link rel="stylesheet" href="Frontpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header-->
+    <div class="headermain">
+      <div class="header-left">
+      <h1>Pc Picker</h1>
+    </div>
+    <div class="header-right">
+      <img src="https://www.freeiconspng.com/thumbs/compare-icon/compare-icon-0.png" class="header-image">
+      <img src="https://static.thenounproject.com/png/4038155-200.png" class="header-image">
+    </div>
+    </div>
+    <!--Sidebar-->
+    <div class="sidebar-main">
+      <!--Sidebar price-->
+      <p class="sidebar-price-text"> Price</p>
+      <input class="sidebar-price-input" placeholder="0-9999$">
+      <!--Sidebar brand picker-->
+      <div class="sidebar-brand-picker">
+        <p class="sidebar-brand-text">Brand</p>
+        <label>
+          <input type="checkbox" id="Asus">Asus
+        </label>
+        <label>
+          <input type="checkbox" id="Lenovo">Lenovo
+        </label>
+        <label>
+          <input type="checkbox" id="Acer">Acer
+        </label>
+        <label>
+          <input type="checkbox" id="HP">HP
+        </label>
+        <label>
+          <input type="checkbox" id="Razer">Razer
+        </label>
+        <label>
+          <input type="checkbox" id="Alienware">Alienware
+        </label>
+        <label>
+          <input type="checkbox" id="Dell">Dell
+        </label>
+        <button class="reset-button"> Reset </button>
+      </div>
+      <!--Sidebar ram selector-->
+      <p>RAM ammount</p>
+      <div class="ram-selector-main">
+        <label>
+          <input type="checkbox" id="4gb">4 GB
+        </label><label>
+          <input type="checkbox" id="8gb">8 GB
+        </label><label>
+          <input type="checkbox" id="16gb">16 GB
+        </label><label>
+          <input type="checkbox" id="32gb">32 GB
+        </label>
+        <label>
+          <input type="checkbox" id="64gb">64 GB
+        </label>
+        <label>
+          <input type="checkbox" id="over64gb">&#62;64 GB
+        </label>
+        <button class="reset-button">Reset</button>
+      </div>
+      <!--Sidebar Storage Selector-->
+      <p>Storage</p>
+      <div class="storage-selector">
+        <label>
+          <input type="checkbox" id="128gb">128 GB
+        </label>
+        <label>
+          <input type="checkbox" id="256gb" checked="">256 GB
+        </label>
+        <label>
+          <input type="checkbox" id="512gb">512 GB
+        </label>
+        <label>
+          <input type="checkbox" id="1000gb">1 TB
+        </label>
+        <label>
+          <input type="checkbox" id="over1000gb">&#62;1 TB
+        </label>
+        <button class="reset-button">Reset</button>
+
+
+        </div>
+      </div>
+    </div>
+    <!--Sorting on the main page-->
+    <div class="main-sort-by">
+      <label for="sort-by-selector">Sort: </label>
+      <select class="sort-by" id="sort-by-selector" name="sort-by">
+        <option value="Ascending">Price: Ascending</option>
+        <option value="Descending">Price: Descending</option>
+      </select>
+    </div>
+    <!--HTML sample-->
+    <div class="main-grid">
+      <div class="main-pc-box">
+        <div class="image-box">
+          <img class="computer-image"src="https://banner2.cleanpng.com/20180711/uyl/kisspng-asus-rog-strix-computer-monitors-republic-of-gamer-rog-5b465bf2ac1324.1265418415313377147048.jpg" alt="pc-image">
+        </div>
+        <div class="details">
+        <p class="Brand-name">Brand: Asus</p>
+        <p class="CPU">CPU: I9-13900</p>
+        <p class="GPU">GPU: RTX4090</p>
+        <p class="RAM">RAM: 64GB</p>
+        <p class="SSD">SSD: 2TB</p>
+        <p class="Price">Price: 4000$</p>
+      </div>
+      </div>
+      <div class="main-pc-box">
+        <div class="image-box">
+          <img class="computer-image"src="https://banner2.cleanpng.com/20180711/uyl/kisspng-asus-rog-strix-computer-monitors-republic-of-gamer-rog-5b465bf2ac1324.1265418415313377147048.jpg" alt="pc-image">
+        </div>
+        <div class="details">
+        <p class="Brand-name">Brand: Asus</p>
+        <p class="CPU">CPU: I9-13900</p>
+        <p class="GPU">GPU: RTX4090</p>
+        <p class="RAM">RAM: 64GB</p>
+        <p class="SSD">SSD: 2TB</p>
+        <p class="Price">Price: 4000$</p>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

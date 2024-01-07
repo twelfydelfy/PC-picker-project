@@ -1,0 +1,145 @@
+.headermain{
+  height: 55px;
+  background-color: rgb(41, 73, 86);
+  position: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  justify-content:space-between;
+}
+body{
+  background-color: rgb(229, 229, 229);
+  font-family: Roboto;
+}
+.header-right{
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.header-image{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+.sidebar-main{
+  background-color: #4B8AA4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 184px;
+  top: 55px;
+  padding-left: 15px;
+}
+.sidebar-main p{
+  color: white;
+}
+.sidebar-price-text{
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.sidebar-price-input{
+  border-style: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.sidebar-brand-picker{
+  display: flex;
+  flex-direction: column;
+
+}
+.sidebar-brand-picker label{
+  color: white;
+}
+.sidebar-brand-picker input{
+  cursor: pointer;
+}
+.reset-button{
+  color: white;
+  background-color: rgb(24, 23, 23);
+  display: inline-block;
+  width: 70px;
+  border-style: none;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+.ram-selector-main{
+  display: flex;
+  flex-direction: column;
+}
+.ram-selector-main label{
+  color: white;
+}
+.ram-selector-main input{
+  border-style: none;
+}
+.storage-selector{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.main-sort-by{
+  display: flex;
+  margin-top:55px;
+  margin-left:184px;
+  background-color: rgb(196, 196, 196);
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin-right: -10px;
+}
+.sort-by{
+  margin-left: 10px;
+}
+.main-grid{
+  position: absolute;
+  bottom: 0px;
+  top: 92px;
+  right: 0px;
+  left: 209px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.image-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.computer-image{
+  height: 200px;
+  width: 282px;
+  object-fit: fill;
+}
+.main-pc-box{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  object-fit:contain;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+.main-pc-box p{
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+.CPU, .GPU, .RAM, .SSD{
+  font-size: 10px;
+}
+.Brand-name, .Price{
+  font-size: 22px;
+}
