@@ -13,6 +13,7 @@ products.forEach((product)=>{
       <p class="ram">RAM: ${product.ram}</p>
       <p class="ssd">SSD: ${product.ssd}</p>
       <p class="price">Price: ${product.price}$</p>
+      <button class="compare-button">Compare</button>
     </div>
     </div>` 
 });

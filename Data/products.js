@@ -15,7 +15,7 @@ export const products = [
     ram: '32GB',
     ssd: '1TB',
     price: '2500',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://images.anandtech.com/doci/12254/inspiron2.jpg'
   },
   {
     brand: 'HP',
@@ -24,7 +24,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1800',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://www.hp.com/ca-en/shop/Html/Merch/Images/c08209914_1750x1285.jpg'
   },
   {
     brand: 'Lenovo',
@@ -33,7 +33,7 @@ export const products = [
     ram: '128GB',
     ssd: '4TB',
     price: '5000',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://www.bhphotovideo.com/images/images2500x2500/lenovo_90ut000nus_legion_tower_5i_gaming_1762501.jpg'
   },
   {
     brand: 'Acer',
@@ -42,7 +42,7 @@ export const products = [
     ram: '8GB',
     ssd: '256GB',
     price: '1200',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://www.bhphotovideo.com/images/images2500x2500/acer_dg_e0haa_005_nitro_50_n50_600_ur12_1410975.jpg'
   },
   {
     brand: 'MSI',
@@ -51,7 +51,7 @@ export const products = [
     ram: '32GB',
     ssd: '1TB',
     price: '2200',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://asset.msi.com/resize/image/global/product/product_9_20170518153151_591d4de726da7.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png'
   },
   {
     brand: 'Apple',
@@ -60,7 +60,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '2800',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-pro-tower-hero-splitter-2023?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684181485853'
   },
   {
     brand: 'CyberPowerPC',
@@ -69,7 +69,7 @@ export const products = [
     ram: '32GB',
     ssd: '1TB',
     price: '2300',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://www.cyberpowerpc.com/images/cs/amethyst242/cs-450-176_400.png'
   },
   {
     brand: 'Alienware',
@@ -78,7 +78,7 @@ export const products = [
     ram: '64GB',
     ssd: '2TB',
     price: '3500',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/alienware-aurora-r15-intel/media-gallery/lunar-light-liquid-clear-panel/desktop-alienware-aurora-r15-white-liquid-clear-panel-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3525&hei=3941&qlt=100,1&resMode=sharp2&size=3525,3941&chrss=full&imwidth=5000'
   },
   {
     brand: 'NZXT',
@@ -87,6 +87,6 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1200',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://nzxt.com/assets/cms/34299/1689030709-playerthreeprime-h9-hero-no-badge-white.png?auto=format&fit=max&h=550&w=384'
   }
 ];
