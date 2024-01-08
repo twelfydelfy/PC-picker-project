@@ -53,3 +53,12 @@ function reloaded() {
  * finished with sorting based on price and popularity, time to start working on the sidebar
  *  
  */
+// gonna start off with the price input, first of all, lets actually get it registered
+let maxPrice = 0;
+const priceinput = document.getElementById('sidebar-price');
+priceinput.addEventListener('keydown', (event)=>{
+  if(event.key === 'Enter'){
+    maxPrice = Number(priceinput.value);
+  }
+})
+//great, now that I have the maxPrice variable saved,
