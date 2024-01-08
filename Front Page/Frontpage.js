@@ -1,10 +1,34 @@
 import { products } from "../Data/products.js";
 let productscopy = products;
 
-// Generating HTML
-function generateHTML(products) {
+let maxPrice = 9999;
+const priceinput = document.getElementById('sidebar-price');
+priceinput.addEventListener('keydown', (event)=>{
+  if(event.key === 'Enter'){
+    maxPrice = Number(priceinput.value);
+    checkmaxprice();
+  }
+});
+
+
+
+function checkmaxprice(){
+  if(maxPrice === 0){
+    generateHTML(products, 9999);
+    console.log('works one');
+  }
+  else{
+    generateHTML(products, maxPrice)
+    console.log('also works');
+  }
+}
+checkmaxprice(maxPrice);
+//Generating HTML
+function generateHTML(products, maxPrice) {
+  console.log('gets executed');
   let productsHTML = "";
   products.forEach((product) => {
+    if(product.price <= maxPrice){
     productsHTML += `<div class="main-pc-box">
       <div class="image-box">
         <img class="computer-image" src="${product.image}" alt="pc-image">
@@ -19,12 +43,12 @@ function generateHTML(products) {
         <button class="compare-button">Compare</button>
       </div>
     </div>`;
-  });
+  }});
   document.querySelector(".main-grid").innerHTML = productsHTML;
 }
 
-// Initial HTML generation
-generateHTML(productscopy);
+
+
 
 // Event listener for select box changes
 const selectSort = document.getElementById("sort-by-selector");
@@ -33,19 +57,19 @@ function reloaded() {
   const selectedValue = selectSort.value;
 
   if (selectedValue === "Popularity") {
-    generateHTML(productscopy);
+    generateHTML(productscopy, maxPrice);
   } else if (selectedValue === "Ascending") {
     function sortComputersByPrice(pc1, pc2) {
       return pc1.price - pc2.price;
     }
     const result = productscopy.slice().sort(sortComputersByPrice);
-    generateHTML(result);
+    generateHTML(result, maxPrice);
   } else if (selectedValue === "Descending") {
     function sortComputersByPrice(pc1, pc2) {
       return pc2.price - pc1.price;
     }
     const result = productscopy.slice().sort(sortComputersByPrice);
-    generateHTML(result);
+    generateHTML(result, maxPrice);
   }
 }
 /**
@@ -54,11 +78,6 @@ function reloaded() {
  *  
  */
 // gonna start off with the price input, first of all, lets actually get it registered
-let maxPrice = 0;
-const priceinput = document.getElementById('sidebar-price');
-priceinput.addEventListener('keydown', (event)=>{
-  if(event.key === 'Enter'){
-    maxPrice = Number(priceinput.value);
-  }
-})
-//great, now that I have the maxPrice variable saved,
+
+//great, now that I have the maxPrice variable saved, let try to see whats with the shit we currently got, come to think of it, all the 
+//html generation is gonna have to come at the end, after all of the variables have already been set
