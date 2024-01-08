@@ -88,5 +88,96 @@ export const products = [
     ssd: '512GB',
     price: '1200',
     image: 'https://nzxt.com/assets/cms/34299/1689030709-playerthreeprime-h9-hero-no-badge-white.png?auto=format&fit=max&h=550&w=384'
+  },
+  {
+    brand: 'Custom Build',
+    cpu: 'Intel Core i9-12900K',
+    gpu: 'NVIDIA RTX 3070 Ti',
+    ram: '64GB',
+    ssd: '2TB',
+    price: '3000',
+    image: 'https://i.ebayimg.com/images/g/RLQAAOSwP1BlBdCJ/s-l1200.webp'
+  },
+  {
+    brand: 'HP',
+    cpu: 'AMD Ryzen 9 5900X',
+    gpu: 'AMD RX 6800 XT',
+    ram: '32GB',
+    ssd: '1TB',
+    price: '2800',
+    image: 'https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06426033.png'
+  },
+  {
+    brand: 'Dell',
+    cpu: 'Intel Core i5-12600K',
+    gpu: 'NVIDIA GTX 1650 Super',
+    ram: '16GB',
+    ssd: '512GB',
+    price: '1500',
+    image: 'https://www.europc.com/it/45088-large_default/dell-g5-5090-gaming-pc-desktop-black-intel-core-i5-9400-8gb-ram-1tb-sata-4gb-nvidia-geforce-gtx-1650-europc-1-yr-wty-140066.jpg'
+  },
+  {
+    brand: 'MSI',
+    cpu: 'Ryzen 9 5900HX',
+    gpu: 'RTX 3080 Laptop',
+    ram: '64GB',
+    ssd: '2TB NVMe',
+    price: '3200',
+    image: 'https://storage-asset.msi.com/global/picture/image/feature/desktop/MPG-Infinite-X2/kv-dt.png'
+  },
+  {
+    brand: 'Acer',
+    cpu: 'Intel Core i7-12700K',
+    gpu: 'GTX 1660 Super',
+    ram: '32GB',
+    ssd: '1TB',
+    price: '2000',
+    image: 'https://cdn.mos.cms.futurecdn.net/e262b7f9fec33cce1dc04bec7d10fd77.jpg'
+  },
+  {
+    brand: 'Lenovo',
+    cpu: 'AMD Ryzen 7 5800H',
+    gpu: 'GTX 1650',
+    ram: '16GB',
+    ssd: '512GB',
+    price: '1800',
+    image: 'https://www.parkwaynigeria.com/wp-content/uploads/2022/10/Lenovo-Legion-Tower-5i-Gaming-Desktop.jpg'
+  },
+  {
+    brand: 'Corsair',
+    cpu: 'Intel Core i9-12800K',
+    gpu: 'RTX 3060',
+    ram: '64GB',
+    ssd: '2TB',
+    price: '2800',
+    image: 'https://www.awd-it.co.uk/media/catalog/product/A/W/AWD_Corsair_iCUE_4000X_RGB_VISION-Angle-Closed_sdo6-ka-610ab66ceac3a.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=680&width=680&canvas=680:680'
+  },
+  {
+    brand: 'ZOTAC',
+    cpu: 'AMD Ryzen 5 5600G',
+    gpu: 'GTX 1660 Ti',
+    ram: '16GB',
+    ssd: '512GB NVMe',
+    price: '1300',
+    image: 'https://www.zotac.com/us/system/files/styles/w787/private/product_main_image/zotac_gaming/i1736kft-01.jpg?itok=pg0oEXaT'
+  },
+  {
+    brand: 'Alienware',
+    cpu: 'Intel Core i7-12700KF',
+    gpu: 'NVIDIA RTX 3060 Ti',
+    ram: '32GB',
+    ssd: '1TB',
+    price: '2400',
+    image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/alienware-aurora-r13/media-gallery/mg-0013-alienware-aurora-r13-dark-side-of-the-moon-bk-clear-panel-cryo-cooled-cryo-cooled/desktop_alienware_aurora_13_bk_clear_cryo_gallery_1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=382&qlt=100,1&resMode=sharp2&size=382,402&chrss=full'
+  },
+  {
+    brand: 'NZXT',
+    cpu: 'AMD Ryzen 7 5700G',
+    gpu: 'NVIDIA GTX 1660',
+    ram: '16GB',
+    ssd: '512GB',
+    price: '1100',
+    image: 'https://nzxt.com/assets/cms/34299/1692864452-player-one-ww-08-22-23-hero-white-badge.png?auto=format&fit=crop&h=1000&w=1000'
   }
 ];
+

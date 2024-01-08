@@ -122,40 +122,28 @@ body{
 .main-pc-box{
   display: flex;
   flex-direction: column;
-  height: 330px;
+  height: 340px;
   object-fit:contain;
   border-style: solid;
   border-color: black;
   border-width: 1px;
-
+  text-align: center;
 }
 .main-pc-box p{
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  align-items: center;
-  justify-content: center;
 }
 .cpu, .gpu, .ram, .ssd{
   font-size: 10px;
 }
-.Brand-name, .Price{
-  font-size: 22px;
+.brand-name, .price{
+  font-size: 19px;
 }
-/*fix the godarn button not being in the middle*/
 .compare-button{
-  align-self: center;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: rgb(21, 107, 37);
   color: white;
+  background-color: rgb(23, 108, 177);
+  border-radius: 13px;
   border-style: none;
-  border-radius: 10px;
-  margin-left: 115px;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
 }
