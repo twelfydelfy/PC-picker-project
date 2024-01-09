@@ -6,7 +6,7 @@ export const products = [
     ram: '64GB',
     ssd: '2TB',
     price: '4000',
-    image: 'https://www.asus.com/media/Odin/Websites/global/Series/52.png'
+    image: 'https://www.asus.com/media/Odin/Websites/global/ProductLine/20230105010819.png'
   },
   {
     brand: 'Dell',
@@ -15,7 +15,7 @@ export const products = [
     ram: '32GB',
     ssd: '1TB',
     price: '2500',
-    image: 'https://images.anandtech.com/doci/12254/inspiron2.jpg'
+    image: 'https://i.dell.com/is/image/dellcontent//content/dam/ss2/product-images/dell-client-products/desktops/inspiron-desktops/5676/global-spi/desktop-inspiron-5676-bestof-500-ng.psd?fmt=png-alpha&wid=500&hei=500&fit=constrain,1'
   },
   {
     brand: 'HP',
@@ -24,7 +24,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1800',
-    image: 'https://www.hp.com/ca-en/shop/Html/Merch/Images/c08209914_1750x1285.jpg'
+    image: 'https://www.lancetrend.com/wp-content/uploads/2023/07/om3-600x450.png'
   },
   {
     brand: 'Lenovo',
@@ -33,7 +33,7 @@ export const products = [
     ram: '128GB',
     ssd: '4TB',
     price: '5000',
-    image: 'https://www.bhphotovideo.com/images/images2500x2500/lenovo_90ut000nus_legion_tower_5i_gaming_1762501.jpg'
+    image: 'https://p1-ofp.static.pub/fes/cms/2022/12/14/z16zqgqe6i9ceelsp9rjjx777dtrb6720043.png'
   },
   {
     brand: 'Acer',
@@ -42,7 +42,7 @@ export const products = [
     ram: '8GB',
     ssd: '256GB',
     price: '1200',
-    image: 'https://www.bhphotovideo.com/images/images2500x2500/acer_dg_e0haa_005_nitro_50_n50_600_ur12_1410975.jpg'
+    image: 'https://cdn.uc.assets.prezly.com/344cf968-394f-4b4c-8f71-bf23beaf24b2/Predator-Orion-5000_PO5-600s_03.png'
   },
   {
     brand: 'MSI',
@@ -60,7 +60,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '2800',
-    image: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-pro-tower-hero-splitter-2023?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684181485853'
+    image: 'https://help.apple.com/assets/646BA1F028A6766AF70D82D8/646BE2C59BBA75275D56B328/en_US/fbac8523b0d81e806024f9d46cb3b976.png'
   },
   {
     brand: 'CyberPowerPC',
@@ -78,7 +78,7 @@ export const products = [
     ram: '64GB',
     ssd: '2TB',
     price: '3500',
-    image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/alienware-aurora-r15-intel/media-gallery/lunar-light-liquid-clear-panel/desktop-alienware-aurora-r15-white-liquid-clear-panel-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3525&hei=3941&qlt=100,1&resMode=sharp2&size=3525,3941&chrss=full&imwidth=5000'
+    image: 'https://i.dell.com/sites/csimages/Product_Imagery/all/prod-2297-desktop-alienware-aurora-r15-white-liquid-clear-panel-800x550.png'
   },
   {
     brand: 'NZXT',
@@ -96,7 +96,7 @@ export const products = [
     ram: '64GB',
     ssd: '2TB',
     price: '3000',
-    image: 'https://i.ebayimg.com/images/g/RLQAAOSwP1BlBdCJ/s-l1200.webp'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Avant-Tower-Gaming-PC.png'
   },
   {
     brand: 'HP',
@@ -114,7 +114,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1500',
-    image: 'https://www.europc.com/it/45088-large_default/dell-g5-5090-gaming-pc-desktop-black-intel-core-i5-9400-8gb-ram-1tb-sata-4gb-nvidia-geforce-gtx-1650-europc-1-yr-wty-140066.jpg'
+    image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/optiplex-desktops/7000/composite-imagery/prod-compare-opti-d12-7000sff-xe4-800x550.png?fmt=png-alpha&wid=800&hei=550'
   },
   {
     brand: 'MSI',
@@ -132,7 +132,7 @@ export const products = [
     ram: '32GB',
     ssd: '1TB',
     price: '2000',
-    image: 'https://cdn.mos.cms.futurecdn.net/e262b7f9fec33cce1dc04bec7d10fd77.jpg'
+    image: 'https://onlineit.com.np/storage/product/474/iwbaLHmBlaggvIePJjvemtcez4cVi9XgQJGht0io.png'
   },
   {
     brand: 'Lenovo',
@@ -141,7 +141,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1800',
-    image: 'https://www.parkwaynigeria.com/wp-content/uploads/2022/10/Lenovo-Legion-Tower-5i-Gaming-Desktop.jpg'
+    image: 'https://cdn.mos.cms.futurecdn.net/YgQdjzuzkL4cBb7m2ayXcQ.png'
   },
   {
     brand: 'Corsair',
@@ -150,7 +150,7 @@ export const products = [
     ram: '64GB',
     ssd: '2TB',
     price: '2800',
-    image: 'https://www.awd-it.co.uk/media/catalog/product/A/W/AWD_Corsair_iCUE_4000X_RGB_VISION-Angle-Closed_sdo6-ka-610ab66ceac3a.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=680&width=680&canvas=680:680'
+    image: 'https://assets.corsair.com/image/upload/f_auto,q_auto,w_1000/akamai/landing/hydro-x/img/hydro-x-home/hero-product-blk.webp'
   },
   {
     brand: 'ZOTAC',
@@ -159,7 +159,7 @@ export const products = [
     ram: '16GB',
     ssd: '512GB',
     price: '1300',
-    image: 'https://www.zotac.com/us/system/files/styles/w787/private/product_main_image/zotac_gaming/i1736kft-01.jpg?itok=pg0oEXaT'
+    image: 'https://www.zotac.com/download/files/page/spectra_green.png'
   },
   {
     brand: 'Alienware',

@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--Header-->
     <div class="headermain">
       <div class="header-left">
         <h1>Pc Picker</h1>
@@ -18,16 +17,16 @@
         <img src="https://static.thenounproject.com/png/4038155-200.png" class="header-image">
       </div>
     </div>
-    <!--Sidebar-->
-    <!--Sorting on the main page-->
     <div class="main-sort-by">
       <label for="sort-by-selector">Sort: </label>
       <select class="sort-by" id="sort-by-selector" name="sort-by">
         <option value="Popularity">By Popularity</option>
         <option value="Ascending">Price: Ascending</option>
         <option value="Descending">Price: Descending</option>
-        <input class="sidebar-price-input" placeholder="Maximum PC Price" id="sidebar-price">
+        
       </select>
+        <p class="price-box-text">Price Limit: </p>
+        <input class="sidebar-price-input" placeholder="Maximum PC Price" id="sidebar-price">
     </div>
     <div class="main-grid"></div>
     <script type="module" src="Frontpage.js"></script>

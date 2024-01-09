@@ -38,12 +38,14 @@ body{
 .main-sort-by{
   display: flex;
   margin-top:55px;
-  margin-left:-5px;
+  margin-left:-8px;
   background-color: rgb(196, 196, 196);
   padding-top: 7px;
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 20px;
   margin-right: -10px;
+  align-items: center;
+  height: 30px;
 }
 .sort-by{
   margin-left: 10px;
@@ -73,8 +75,8 @@ body{
   height: 340px;
   object-fit:contain;
   border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-width: 2px;
   text-align: center;
 }
 .main-pc-box p{
@@ -86,10 +88,12 @@ body{
 }
 .sidebar-price-input{
   border-radius: 10px;
-  padding-left: 7px;
   border-style: solid;
   border-color: black;
   border-width: 1px;
+  padding: 2px 2px 2px 0px;
+  text-align: center;
+  margin-left: 7px;
 }
 .compare-button{
   color: white;
@@ -105,27 +109,22 @@ body{
   background-color: rgb(31, 134, 218);
   cursor: pointer;
 }
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1525px) {
   .main-grid{
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media screen and (max-width: 1560px){
+@media screen and (max-width: 1215px){
   .main-grid{
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 920px){
   .main-grid{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 1060px){
-  .main-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 800px){
+@media screen and (max-width: 615px){
   .main-grid{
     grid-template-columns: repeat(1, 1fr);
   }

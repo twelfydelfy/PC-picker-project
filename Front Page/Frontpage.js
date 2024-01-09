@@ -8,6 +8,7 @@ priceinput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     maxPrice = Number(priceinput.value);
     checkmaxprice();
+    selectSort.value = 'Popularity';
   }
 });
 
@@ -32,11 +33,13 @@ function generateHTML(filteredProducts, maxPrice) {
       </div>`;
     }
   });
-
+  if(productsHTML === ''){productsHTML = "Sorry, there seems to be no PC's matching your criteria";}
   document.querySelector(".main-grid").innerHTML = productsHTML;
+  
 }
 
 function checkmaxprice() {
+  
   if (maxPrice === 0) {
     generateHTML(products, 9999);
   } else {
