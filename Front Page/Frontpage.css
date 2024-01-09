@@ -28,40 +28,6 @@ body{
   width: 40px;
   margin-left: 10px;
 }
-.sidebar-main{
-  background-color: #4B8AA4;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 184px;
-  top: 55px;
-  padding-left: 15px;
-}
-.sidebar-main p{
-  color: white;
-}
-.sidebar-price-text{
-  margin-bottom: 5px;
-  padding-left: 5px;
-}
-.sidebar-price-input{
-  border-style: none;
-  border-radius: 20px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-.sidebar-brand-picker{
-  display: flex;
-  flex-direction: column;
-
-}
-.sidebar-brand-picker label{
-  color: white;
-}
-.sidebar-brand-picker input{
-  cursor: pointer;
-}
 .buttons{
   display: flex;
   width: 100px;
@@ -69,47 +35,10 @@ body{
   justify-content: center;
   margin-left: 10px;
 }
-.reset-button{
-  color: white;
-  background-color: rgb(0, 0, 0);
-  display: inline-block;
-  width: 70px;
-  border-style: none;
-  border-radius: 3px;
-  padding: 5px 10px 5px 10px;
-  margin-left: 20px;
-  margin-top: 7px;
-}
-.apply-button{
-  color: white;
-  background-color: rgb(0, 0, 0);
-  display: inline-block;
-  width: 70px;
-  border-style: none;
-  border-radius: 3px;
-  padding: 5px 10px 5px 10px;
-  margin-left: 20px;
-  margin-top: 7px;
-}
-.ram-selector-main{
-  display: flex;
-  flex-direction: column;
-}
-.ram-selector-main label{
-  color: white;
-}
-.ram-selector-main input{
-  border-style: none;
-}
-.storage-selector{
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
 .main-sort-by{
   display: flex;
   margin-top:55px;
-  margin-left:184px;
+  margin-left:-5px;
   background-color: rgb(196, 196, 196);
   padding-top: 7px;
   padding-bottom: 5px;
@@ -118,9 +47,10 @@ body{
 }
 .sort-by{
   margin-left: 10px;
+  margin-right: 20px;
 }
 .main-grid{
-  margin-left: 200px;
+  margin-left: 10px;
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -154,8 +84,12 @@ body{
 .cpu, .gpu, .ram, .ssd{
   font-size: 10px;
 }
-.brand-name, .price{
-  font-size: 19px;
+.sidebar-price-input{
+  border-radius: 10px;
+  padding-left: 7px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
 }
 .compare-button{
   color: white;
@@ -165,6 +99,7 @@ body{
   padding: 10px 10px 10px 10px;
   font-size: 14px;
   transition: background-color 0.15s;
+  margin-top: 5px;
 }
 .compare-button:hover{
   background-color: rgb(31, 134, 218);
