@@ -1,6 +1,7 @@
 import { products } from "../Data/products.js";
 let productscopy = products;
-
+let anotherproductscopy = products;
+let criterias = [];
 let maxPrice = 9999;
 const priceinput = document.getElementById('sidebar-price');
 priceinput.addEventListener('keydown', (event)=>{
@@ -9,23 +10,36 @@ priceinput.addEventListener('keydown', (event)=>{
     checkmaxprice();
   }
 });
+//checking for criterias
+document.querySelector('.apply-button').addEventListener('click', ()=>{
+  criterias = [];
+  document.querySelectorAll('.filter-checkbox').forEach((checkbox)=>{
+    if(checkbox.checked){
+    criterias.push(checkbox.id);}
+  });
+  console.log(criterias);
+  generateHTML(productscopy, maxPrice);
+});
 
+//filetering the html copy
 
+function filterProducts(products, maxPrice){
+  criterias.forEach((criteria)=>{
+    
+  })
+}
 
 function checkmaxprice(){
   if(maxPrice === 0){
     generateHTML(products, 9999);
-    console.log('works one');
   }
   else{
     generateHTML(products, maxPrice)
-    console.log('also works');
   }
 }
 checkmaxprice(maxPrice);
 //Generating HTML
 function generateHTML(products, maxPrice) {
-  console.log('gets executed');
   let productsHTML = "";
   products.forEach((product) => {
     if(product.price <= maxPrice){

@@ -121,7 +121,7 @@ export const products = [
     cpu: 'Ryzen 9 5900HX',
     gpu: 'RTX 3080 Laptop',
     ram: '64GB',
-    ssd: '2TB NVMe',
+    ssd: '2TB',
     price: '3200',
     image: 'https://storage-asset.msi.com/global/picture/image/feature/desktop/MPG-Infinite-X2/kv-dt.png'
   },
@@ -157,7 +157,7 @@ export const products = [
     cpu: 'AMD Ryzen 5 5600G',
     gpu: 'GTX 1660 Ti',
     ram: '16GB',
-    ssd: '512GB NVMe',
+    ssd: '512GB',
     price: '1300',
     image: 'https://www.zotac.com/us/system/files/styles/w787/private/product_main_image/zotac_gaming/i1736kft-01.jpg?itok=pg0oEXaT'
   },

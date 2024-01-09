@@ -4,19 +4,19 @@
     <title>PC Picker Project</title>
     <link rel="stylesheet" href="Frontpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--Header-->
     <div class="headermain">
       <div class="header-left">
-      <h1>Pc Picker</h1>
-    </div>
-    <div class="header-right">
-      <img src="https://www.freeiconspng.com/thumbs/compare-icon/compare-icon-0.png" class="header-image">
-      <img src="https://static.thenounproject.com/png/4038155-200.png" class="header-image">
-    </div>
+        <h1>Pc Picker</h1>
+      </div>
+      <div class="header-right">
+        <img src="https://www.freeiconspng.com/thumbs/compare-icon/compare-icon-0.png" class="header-image">
+        <img src="https://static.thenounproject.com/png/4038155-200.png" class="header-image">
+      </div>
     </div>
     <!--Sidebar-->
     <div class="sidebar-main">
@@ -27,76 +27,76 @@
       <div class="sidebar-brand-picker">
         <p class="sidebar-brand-text">Brand</p>
         <label>
-          <input type="checkbox" id="Asus">Asus
+          <input type="checkbox" id="Asus" class="filter-checkbox">Asus
         </label>
         <label>
-          <input type="checkbox" id="Lenovo">Lenovo
+          <input type="checkbox" id="Lenovo" class="filter-checkbox">Lenovo
         </label>
         <label>
-          <input type="checkbox" id="Acer">Acer
+          <input type="checkbox" id="Acer" class="filter-checkbox">Acer
         </label>
         <label>
-          <input type="checkbox" id="HP">HP
+          <input type="checkbox" id="HP" class="filter-checkbox">HP
         </label>
         <label>
-          <input type="checkbox" id="Razer">Razer
+          <input type="checkbox" id="Razer" class="filter-checkbox">Razer
         </label>
         <label>
-          <input type="checkbox" id="Alienware">Alienware
+          <input type="checkbox" id="Alienware" class="filter-checkbox">Alienware
         </label>
         <label>
-          <input type="checkbox" id="Dell">Dell
+          <input type="checkbox" id="Dell" class="filter-checkbox">Dell
         </label>
         <label>
-          <input type="checkbox" id="Others">Others
+          <input type="checkbox" id="Others" class="filter-checkbox">Others
         </label>
-        <div class="buttons">
-        <button class="apply-button">Apply</button>
-        <button class="reset-button"> Reset </button></div>
       </div>
       <!--Sidebar ram selector-->
-      <p>RAM ammount</p>
+      <p>RAM amount</p>
       <div class="ram-selector-main">
         <label>
-          <input type="checkbox" id="4gb">4 GB
-        </label><label>
-          <input type="checkbox" id="8gb">8 GB
-        </label><label>
-          <input type="checkbox" id="16gb">16 GB
-        </label><label>
-          <input type="checkbox" id="32gb">32 GB
+          <input type="checkbox" id="4gb" class="filter-checkbox">4 GB
         </label>
         <label>
-          <input type="checkbox" id="64gb">64 GB
+          <input type="checkbox" id="8gb" class="filter-checkbox">8 GB
         </label>
         <label>
-          <input type="checkbox" id="over64gb">&#62;64 GB
+          <input type="checkbox" id="16gb" class="filter-checkbox">16 GB
         </label>
-        <div class="buttons">
-          <button class="apply-button">Apply</button>
-          <button class="reset-button"> Reset </button></div>
+        <label>
+          <input type="checkbox" id="32gb" class="filter-checkbox">32 GB
+        </label>
+        <label>
+          <input type="checkbox" id="64gb" class="filter-checkbox">64 GB
+        </label>
+        <label>
+          <input type="checkbox" id="128gb" class="filter-checkbox">128 GB
+        </label>
       </div>
       <!--Sidebar Storage Selector-->
       <p>Storage</p>
       <div class="storage-selector">
         <label>
-          <input type="checkbox" id="128gb">128 GB
+          <input type="checkbox" id="128gb" class="filter-checkbox">128 GB
         </label>
         <label>
-          <input type="checkbox" id="256gb" checked="">256 GB
+          <input type="checkbox" id="256gb" class="filter-checkbox">256 GB
         </label>
         <label>
-          <input type="checkbox" id="512gb">512 GB
+          <input type="checkbox" id="512gb" class="filter-checkbox">512 GB
         </label>
         <label>
-          <input type="checkbox" id="1000gb">1 TB
+          <input type="checkbox" id="1tb" class="filter-checkbox">1 TB
         </label>
         <label>
-          <input type="checkbox" id="over1000gb">&#62;1 TB
+          <input type="checkbox" id="2tb" class="filter-checkbox">2 TB
+        </label>
+        <label>
+          <input type="checkbox" id="4tb" class="filter-checkbox">4 TB
         </label>
         <div class="buttons">
           <button class="apply-button">Apply</button>
-          <button class="reset-button"> Reset </button></div>
+          <button class="reset-button"> Reset </button>
         </div>
       </div>
     </div>
@@ -109,8 +109,7 @@
         <option value="Descending">Price: Descending</option>
       </select>
     </div>
-    <div class="main-grid">
-    </div>
-    <script type = "module" src="Frontpage.js"></script>
+    <div class="main-grid"></div>
+    <script type="module" src="Frontpage.js"></script>
   </body>
 </html>
