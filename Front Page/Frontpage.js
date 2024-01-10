@@ -1,11 +1,31 @@
 import { products } from "../Data/products.js";
-
+/*
+1) Add a reset button for the comparasion
+2) In the Database, add ranks for the CPU's and GPU's
+3) Add that comparasion in the comparing menu
+4) Make the comparaison page prettier
+*/
 let productscopy = products;
 let maxPrice = 9999;
 
 export let chosencomparasion = [];
 let firstPC = false;
 let secondPC = false;
+let numberofcomp = 0;
+function numberofcomps(){
+  if(firstPC === true && secondPC === false){
+    numberofcomp = 1;
+  }
+  else if(
+    firstPC === true && secondPC === true){
+      numberofcomp = 2;
+    }
+    else if(
+      firstPC === false && secondPC === false){
+        numberofcomp = 0;
+      }
+    document.querySelector('.compare-badge').innerHTML = numberofcomp + '/2';
+    }
 
 const priceinput = document.getElementById('sidebar-price');
 priceinput.addEventListener('keydown', (event) => {
@@ -39,6 +59,7 @@ function generateHTML(filteredProducts, maxPrice) {
   });
   if(productsHTML === ''){productsHTML = "Sorry, there seems to be no PC's matching your criteria";}
   document.querySelector(".main-grid").innerHTML = productsHTML;
+
   document.querySelectorAll('.compare-button').forEach((button, index) => {
   button.addEventListener('click', () => {
     if(firstPC === false){
@@ -57,6 +78,7 @@ function generateHTML(filteredProducts, maxPrice) {
     {
       alert('You already have two computers selected for comparasion, reset the comparasion');
     }
+    numberofcomps()
   });
 });
   
