@@ -1,8 +1,6 @@
 import { products } from "../Data/products.js";
 /*
-1) Add a reset button for the comparasion
-2) In the Database, add ranks for the CPU's and GPU's
-3) Add that comparasion in the comparing menu
+3) Actually make the reset button work
 4) Make the comparaison page prettier
 */
 let productscopy = products;
@@ -118,3 +116,13 @@ function reloaded() {
     generateHTML(result, maxPrice);
   }
 }
+document.querySelector('.reset-compare').addEventListener(('click'),()=>{
+  chosencomparasion[0] = {};
+  chosencomparasion[1] = {};
+  localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
+  firstPC = false;
+  secondPC = false;
+  numberofcomp = 0;
+  document.querySelector('.compare-badge').innerHTML = numberofcomp + '/2';
+  console.log(chosencomparasion);
+});
