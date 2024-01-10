@@ -3,6 +3,10 @@ import { products } from "../Data/products.js";
 let productscopy = products;
 let maxPrice = 9999;
 
+export let chosencomparasion = [];
+let firstPC = false;
+let secondPC = false;
+
 const priceinput = document.getElementById('sidebar-price');
 priceinput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
@@ -35,6 +39,26 @@ function generateHTML(filteredProducts, maxPrice) {
   });
   if(productsHTML === ''){productsHTML = "Sorry, there seems to be no PC's matching your criteria";}
   document.querySelector(".main-grid").innerHTML = productsHTML;
+  document.querySelectorAll('.compare-button').forEach((button, index) => {
+  button.addEventListener('click', () => {
+    if(firstPC === false){
+      chosencomparasion[0] = filteredProducts[index];
+      console.log(chosencomparasion[0]);
+      firstPC = true;
+      localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
+    }
+    else if(secondPC === false){
+      chosencomparasion[1] = filteredProducts[index];
+      console.log(chosencomparasion[1]);
+      secondPC = true;
+      localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
+    }
+    else if (firstPC === true && secondPC === true)
+    {
+      alert('You already have two computers selected for comparasion, reset the comparasion');
+    }
+  });
+});
   
 }
 
@@ -61,13 +85,14 @@ function reloaded() {
       return pc1.price - pc2.price;
     }
     const result = productscopy.slice().sort(sortComputersByPrice);
+    if(maxPrice === 0){maxPrice = 9999;}
     generateHTML(result, maxPrice);
   } else if (selectedValue === "Descending") {
     function sortComputersByPrice(pc1, pc2) {
       return pc2.price - pc1.price;
     }
     const result = productscopy.slice().sort(sortComputersByPrice);
+    if(maxPrice === 0){maxPrice = 9999;}
     generateHTML(result, maxPrice);
   }
 }
-
