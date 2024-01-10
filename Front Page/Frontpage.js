@@ -29,8 +29,8 @@ function generateHTML(filteredProducts, maxPrice) {
           <p class="brand-name">Brand: ${product.brand}</p>
           <p class="cpu">CPU: ${product.cpu}</p>
           <p class="gpu">GPU: ${product.gpu}</p>
-          <p class="ram">RAM: ${product.ram}</p>
-          <p class="ssd">SSD: ${product.ssd}</p>
+          <p class="ram">RAM: ${product.ram}GB</p>
+          <p class="ssd">SSD: ${product.ssd}GB</p>
           <p class="price">Price: ${product.price}$</p>
           <button class="compare-button">Compare</button>
         </div>

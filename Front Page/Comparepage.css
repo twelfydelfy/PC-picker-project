@@ -37,3 +37,44 @@ body{
 h1{
   color:white;
 }
+.cpu, .gpu, .ram, .ssd{
+  font-size: 10px;
+}
+.computer-image{
+  height: 200px;
+  width: 282px;
+  object-fit: fill;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  object-fit:contain;
+  border-style: solid;
+  border-color: rgb(98, 98, 98);
+  border-width: 2px;
+  text-align: center;
+}
+.main-body{
+  display: flex;
+  align-items: flex-start;
+  height: 300px;
+}
+.details p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.compare-title{
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+.comparasion-details{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.comparasion-details p{
+  font-size: 20px;
+  margin-top: 0;
+}
