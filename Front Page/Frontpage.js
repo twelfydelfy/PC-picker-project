@@ -1,8 +1,5 @@
 import { products } from "../Data/products.js";
-/*
-3) Actually make the reset button work
-4) Make the comparaison page prettier
-*/
+
 let productscopy = products;
 let maxPrice = 9999;
 
