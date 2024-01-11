@@ -14,8 +14,8 @@ firstcompare = `
         <p class="brand-name">Brand: ${chosencomparasion[0].brand}</p>
         <p class="cpu">CPU: ${chosencomparasion[0].cpu}</p>
         <p class="gpu">GPU: ${chosencomparasion[0].gpu}</p>
-        <p class="ram">RAM: ${chosencomparasion[0].ram}</p>
-        <p class="ssd">SSD: ${chosencomparasion[0].ssd}</p>
+        <p class="ram">RAM: ${chosencomparasion[0].ram}GB</p>
+        <p class="ssd">SSD: ${chosencomparasion[0].ssd}GB</p>
         <p class="price">Price: ${chosencomparasion[0].price}$</p>
       </div>
 `;
@@ -27,8 +27,8 @@ secondcompare = `
         <img class="computer-image" src="${chosencomparasion[1].image}">
         <p class="brand-name">Brand: ${chosencomparasion[1].brand}</p>
         <p class="cpu">CPU: ${chosencomparasion[1].cpu}</p>
-        <p class="gpu">GPU: ${chosencomparasion[1].gpu}</p>
-        <p class="ram">RAM: ${chosencomparasion[1].ram}</p>
+        <p class="gpu">GPU: ${chosencomparasion[1].gpu}GB</p>
+        <p class="ram">RAM: ${chosencomparasion[1].ram}GB</p>
         <p class="ssd">SSD: ${chosencomparasion[1].ssd}</p>
         <p class="price">Price: ${chosencomparasion[1].price}$</p>
       </div>
