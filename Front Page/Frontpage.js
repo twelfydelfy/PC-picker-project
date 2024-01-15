@@ -47,7 +47,7 @@ function generateHTML(filteredProducts, maxPrice) {
           <p class="ram">RAM: ${product.ram}GB</p>
           <p class="ssd">SSD: ${product.ssd}GB</p>
           <p class="price">Price: ${product.price}$</p>
-          <button class="compare-button">Compare</button>
+          <button class="compare-button" id="compare-button">Compare</button>
         </div>
       </div>`;
     }
@@ -56,26 +56,32 @@ function generateHTML(filteredProducts, maxPrice) {
   document.querySelector(".main-grid").innerHTML = productsHTML;
 
   document.querySelectorAll('.compare-button').forEach((button, index) => {
-  button.addEventListener('click', () => {
-    if(firstPC === false){
-      chosencomparasion[0] = filteredProducts[index];
-      console.log(chosencomparasion[0]);
-      firstPC = true;
-      localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
-    }
-    else if(secondPC === false){
-      chosencomparasion[1] = filteredProducts[index];
-      console.log(chosencomparasion[1]);
-      secondPC = true;
-      localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
-    }
-    else if (firstPC === true && secondPC === true)
-    {
-      alert('You already have two computers selected for comparasion, reset the comparasion');
-    }
-    numberofcomps()
+    button.addEventListener('click', () => {
+      if(firstPC === false || secondPC === false){
+      if (button.classList.contains('added')) {
+        return;
+      }
+
+      button.innerHTML = 'Added to Comparison Tab';
+      button.classList.add('added');
+  }
+      if (firstPC === false) {
+        chosencomparasion[0] = filteredProducts[index];
+        console.log(chosencomparasion[0]);
+        firstPC = true;
+        localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
+      } else if (secondPC === false) {
+        chosencomparasion[1] = filteredProducts[index];
+        console.log(chosencomparasion[1]);
+        secondPC = true;
+        localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
+      } else if (firstPC === true && secondPC === true) {
+        alert('You already have two computers selected for comparison, reset the comparison');
+      }
+      numberofcomps();
+    });
   });
-});
+  
   
 }
 

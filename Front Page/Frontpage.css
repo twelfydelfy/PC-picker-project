@@ -146,5 +146,18 @@ body{
   right: 25px;
   padding-top: 2px;
   padding-bottom: 2px;
-
+}
+.added{
+    color: white;
+    background-color: rgb(23, 177, 44);
+    border-radius: 13px;
+    border-style: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    transition: background-color 0.15s;
+    margin-top: 5px;
+    position: relative;
+}
+.added:hover{
+  background-color: rgb(13, 107, 25);
 }
