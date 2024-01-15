@@ -125,7 +125,12 @@ document.querySelector('.reset-compare').addEventListener(('click'),()=>{
   localStorage.setItem('chosencomparasion', JSON.stringify(chosencomparasion));
   firstPC = false;
   secondPC = false;
+  document.querySelectorAll('.compare-button').forEach((button, index) => {
+      if (button.classList.contains('added')) {
+        button.classList.remove('added');
+        button.innerHTML = 'Compare';
+      }
   numberofcomp = 0;
   document.querySelector('.compare-badge').innerHTML = numberofcomp + '/2';
   console.log(chosencomparasion);
-});
+    })});

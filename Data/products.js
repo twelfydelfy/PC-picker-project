@@ -218,16 +218,5 @@ export const products = [
     image: 'https://nzxt.com/assets/cms/34299/1692864452-player-one-ww-08-22-23-hero-white-badge.png?auto=format&fit=crop&h=1000&w=1000',
     cpuRank: 5,
     gpuRank: 3
-  },
-  {
-    brand: 'Valera',
-    cpu: 'Vafle',
-    gpu: 'valfe',
-    ram: 2,
-    ssd: 128,
-    price: '1',
-    image: 'https://nzxt.com/assets/cms/34299/1692864452-player-one-ww-08-22-23-hero-white-badge.png?auto=format&fit=crop&h=1000&w=1000',
-    cpuRank: 1,
-    gpuRank: 1
   }
 ];
