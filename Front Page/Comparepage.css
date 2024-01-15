@@ -1,3 +1,13 @@
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body{
   font-family: Roboto;
   background-color: rgb(229, 229, 229);
@@ -17,6 +27,9 @@ body{
   margin: 0px;
   justify-content:space-between;
 }
+.full-body{
+  animation: fade-in 1s;
+}
 .header-right{
   height: 55px;
   display: flex;
@@ -34,8 +47,12 @@ body{
   vertical-align: middle;
   height: 100vh;
 }
-h1{
-  color:white;
+.site-title{
+  color: white;
+  transition: all 0.2s;
+}
+.site-title:hover{
+  transform: scale(1.2);
 }
 .cpu, .gpu, .ram, .ssd{
   font-size: 10px;

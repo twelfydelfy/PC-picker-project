@@ -1,3 +1,7 @@
+//add a back button to the compare page
+//add a dark-mode slider (and dark mode)
+//make the buttons un-clickable
+
 import { products } from "../Data/products.js";
 
 let productscopy = products;
